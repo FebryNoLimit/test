@@ -1,0 +1,22 @@
+import socket
+import getpass
+
+def get_ip():
+    hostname = socket.gethostname()
+    ip_address = socket.gethostbyname(hostname)
+    return ip_address
+
+def get_username():
+    return getpass.getuser()
+
+def get_password():
+    return getpass.getpass()
+
+if __name__ == "__main__":
+    ip = get_ip()
+    username = get_username()
+    password = get_password()
+
+    print("IP:", ip)
+    print("Username:", username)
+    print("Password:", password)
